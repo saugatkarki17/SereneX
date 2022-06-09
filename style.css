@@ -3,29 +3,42 @@
     padding:0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: poppins-medium ;
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppins-bold ;
+    src: url(Poppins-ExtraBold.ttf);
+}
 nav {
     width: 100%;
     height: 3.2rem;
     background-color: #000309;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+   
 
+}
+.nav-div {
+   margin-left: auto;
+   margin-right: auto;
+    width: 83%;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 .LOGO {
     color:#cccdce ;
     font-family: monospace;
     font-size: 25px;
-    transform: translateX(-7rem);
     
 }
 .nav-links {
-    width: 23%;
+    width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
     align-items: center;
-    transform: translateX(7rem);
 }
 .nav-links li {
 list-style: none;
@@ -45,4 +58,82 @@ border-radius: 15px;
     transition: 0.25s ease;
 
 }
+.nav-links li:hover #link {
+    color:rgb(255, 255, 255);
+    transition: 0.25s ease;
 
+}
+
+/* for main div */
+
+.main-div {
+    width: 100%;
+    height: 25rem;
+    background-color: #f5f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-div-01 {
+    
+    width: 30rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main-div-02 {
+    width: 40rem;
+    height: 100%;
+    background-image: url(img-main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 82% 120% ;
+}
+.wel {
+    font-family: poppins-bold ;
+    color: #000309;
+    font-size: 45px;
+    font-weight: bolder;
+
+}
+.wel-01 {
+    font-family: poppins-bold ;
+    color: #5c9bdd;
+    font-size: 45px;
+    font-weight: bolder;
+}
+.info-main {
+    font-family: poppins-medium ;
+    color: #898989;
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.btns-div{
+
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+    transition: ease-in-out;
+}
+
+#main-btn:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s ;
+}
+.lmore {
+    padding: 10px 25px;
+    background-color: #000309;
+    color: #cccdce;
+    font-family: poppins-medium ;
+
+}
+.view-01 {
+    padding: 10px 25px;
+    font-family: poppins-medium ;
+
+    background-color: transparent;
+    border: 2px solid #000309;
+    color: #000309;
+}
